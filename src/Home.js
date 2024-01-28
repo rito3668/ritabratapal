@@ -41,7 +41,7 @@ export default function Home() {
           <Link><span className='hover:font-semibold  duration-200 ease-out'>&nbsp; 02 &nbsp;: &nbsp;Resume &nbsp;</span></Link>
       </div>
       {/* footer */}
-      <div className='text-center mt-10'>Inspired by dank memes and big dreams :')</div>
+      <div className='text-center mt-10'>Inspired by dank memes and big dreams :&#41; </div>
       <div className='text-center'>	&#169; Ritabrata Pal 2024</div>
     </div>
   )
