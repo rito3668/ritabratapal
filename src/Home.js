@@ -1,6 +1,7 @@
 import React from 'react'
 import {} from 'react-router-dom'
 import { FaGithub,FaTwitter,FaLinkedin,FaInstagram,FaEma } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
 import {useTypewriter,Cursor} from 'react-simple-typewriter'
 // import banner from './assets/banner.jpg'
@@ -15,7 +16,7 @@ export default function Home() {
       <div className=''>
         <div className='relative'>
         <img src="https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg" alt="" className='w-full h-[300px] md:h-[400px] lg:h-[650px]' />
-        <div  className='absolute top-1/3 left-20 md:left-40 flex items-center text-[30px] sm:text-4xl md:text-6xl  text-white font-bold'>
+        <div  className='absolute top-1/3 left-10 md:left-[150px] flex items-center text-[30px] sm:text-4xl md:text-6xl  text-white font-bold'>
         <h1>
         Hello, I am &nbsp;
        <div className='mt-1 md:mt-5'>
@@ -45,13 +46,13 @@ export default function Home() {
           <div className='mx-auto mt-3'>
             <h1 className='text-3xl mb-4'>Links</h1>
             <div className='flex gap-6'>
-              <a target='_blank' href='https://github.com'><FaGithub size={21}/></a>
-              <a target='_blank' href="https://www.linkedin.com/in/ritabrata-pal-6a728a229/"><FaLinkedin size={21}/></a>
-              <a target='_blank' href="https://twitter.com/unknown13668"><FaTwitter size={21}/></a>
-              <a target='_blank' href="https://www.instagram.com/rit.2084/"><FaInstagram size={21}/></a>
+              <FaGithub size={21} onClick={()=>window.open('https://github.com/rito3668','_blank')} className='cursor-pointer'/>
+              <FaLinkedin size={22} onClick={()=>window.open('https://github.com/rito3668','_blank')} className='cursor-pointer text-blue-800'/>
+              <FaTwitter size={21}onClick={()=>window.open('https://github.com/rit.2084','_blank')} className='cursor-pointer text-blue-400'/>
+              <FaInstagram size={21}onClick={()=>window.open('https://instagram.com/rito3668','_blank')} className='cursor-pointer '/>
             </div>
             <p className='flex items-center gap-4 mt-5'>
-              <MdEmail size={24} className='cursor-pointer'/>
+              <CiMail size={24} className='cursor-pointer'/>
                 <span className='font-medium text-lg'>rito3668@gmail.com</span>
             </p>
           </div>

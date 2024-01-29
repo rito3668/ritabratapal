@@ -22,7 +22,7 @@ export default function Resume() {
         <h1 className='text-[28px] font-normal mt-20 text-center md:text-left '>Some Projects</h1>
         <div className='mt-10 '>
             <div className='mt-8 max-w-[1000px] mx-auto block text-center md:text-left md:flex gap-[150px] items-start'>
-                <img src={Project} alt="logo" className='w-[400px] h-[200px] mx-auto' />
+                <img src={Project} alt="logo" className='w-[350px] h-[174px] lg:w-[400px] lg:h-[200px] mx-auto' />
                 <div className='mt-0'>
                     <h1 className='text-xl font-extrabold my-3'>DOJO APP</h1>
                     <h2 className='font-normal'><span className='font-semibold'>Desc:</span> Webapp for assigning users projects. It comes with User authentication</h2>
@@ -31,7 +31,7 @@ export default function Resume() {
                 </div>
             </div>
             <div className='mt-20 max-w-[1000px] mx-auto md:flex text-center md:text-left gap-[150px] items-start'>
-                <img src={Chat} alt="logo" className='w-[400px] h-[200px] mx-auto' />
+                <img src={Chat} alt="logo" className='w-[350px] h-[174px] lg:w-[400px] lg:h-[200px] mx-auto' />
                 <div className='mt-0'>
                     <h1 className='text-xl font-extrabold my-3'>CHAT APP</h1>
                     <h2 className='font-normal'><span className='font-semibold'>Desc:</span> Webapp for chatting. It has features like blocking users, deleting messages for self or everyone and user authentication</h2>
@@ -40,8 +40,8 @@ export default function Resume() {
                 </div>
             </div>
         </div>
-        <div className='text-center mt-[100px] mb-2 text-gray-600 text-[17px] '>Inspired by dank memes and big dreams :&#41; </div>
-      <div className='text-center text-gray-600 text-[18px]'>	&#169; Ritabrata Pal 2024</div>
+        <div className='text-center font-light mt-20 mb-3 text-gray-600 text-[17px]'>Inspired by dank memes and big dreams :&#41; </div>
+      <div className='text-center text-gray-600 font-light  text-[18px]'>	&#169; Ritabrata Pal 2024</div>
     </div>
   )
 }
