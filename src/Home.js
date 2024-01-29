@@ -1,48 +1,69 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link,useHistory} from 'react-router-dom'
 import { FaGithub,FaTwitter,FaLinkedin,FaInstagram,FaEma } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import {useTypewriter,Cursor} from 'react-simple-typewriter'
 // import banner from './assets/banner.jpg'
 export default function Home() {
+  const [text] = useTypewriter({
+    words:['Ritabrata','a FullStack Developer','an Engineering Student','a dog lover'],
+    loop:{}
+  })
+  const history = useHistory()
   return (
-    <div className='w-full h-[1000px]'>
+    <div className='w-full h-[1000px] text-[18px]'>
       <div className=''>
-        <div>
-        <img src="https://cdn.logojoy.com/wp-content/uploads/20210831173828/1167448_YoutubeBannerInfographic_082721_Option1-600x338.png" alt="" className='w-full h-[650px]' />
+        <div className='relative'>
+        <img src="https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg" alt="" className='w-full h-[650px]' />
+        <div  className='absolute top-1/3 left-40 flex items-center text-6xl text-white font-bold'>
+        <h1>
+        Hello, I am &nbsp;
+       <div className='mt-2'>
+       <span >{text}</span>
+        <Cursor/>
+       </div>
+      </h1>
+        </div>
         </div> 
       </div>
       {/* main content */}
       <div className='max-w-[1100px] mx-auto mt-5  grid grid-cols-2 gap-20'>
           {/* left div */}
           <div className=''>
-            <h2 className='text-3xl mb-4'>Hi there!</h2>
-            <p>My name is Ritabrata Pal. I am currently pursuing BE/BTECH from National Institute of Technolodgy, Meghalaya  and have been working on Fullstack Development on Mern Stack. I am passionate about Development, ML, and web3. Eventually, I plan to establish a YouTube channel dedicated to AI, in order to fund a self-sustaining AI research lab.</p>
+            <h2 className='text-3xl mb-4 font-medium'>Hi there!</h2>
+            <p>My name is Ritabrata Pal. I am currently pursuing B.E/B.Tech from National Institute of Technolodgy, Meghalaya  and have been working on Fullstack Development on Mern Stack. I am passionate about Development, Blockchain, and Web3. I love to work with NextJs and TailwindCSS.</p>
+            <div>
+              <p className='mb-2'>Currently, I am:</p>
+              <ul className='ml-4'>
+                <li>Learning NextJs and Typescript</li>
+                <li>Learning about fullstack development</li>
+                <li>Learning about Data strcutures and algorithms</li>
+              </ul>
+            </div>
           </div>
           {/* right  div */}
           <div className=''>
             <h1 className='text-3xl mb-4'>Links</h1>
             <div className='flex gap-6'>
-              <Link><FaGithub size={24}/></Link>
-              <Link><FaLinkedin size={24}/></Link>
-              <Link><FaTwitter size={24}/></Link>
-              <Link><FaInstagram size={24}/></Link>
+              <a target='_blank' href='https://github.com'><FaGithub size={21}/></a>
+              <a target='_blank' href="https://www.linkedin.com/in/ritabrata-pal-6a728a229/"><FaLinkedin size={21}/></a>
+              <a target='_blank' href="https://twitter.com/unknown13668"><FaTwitter size={21}/></a>
+              <a target='_blank' href="https://www.instagram.com/rit.2084/"><FaInstagram size={21}/></a>
             </div>
-            <p className='flex items-center gap-5 mt-5'>
+            <p className='flex items-center gap-4 mt-5'>
               <MdEmail size={24} className='cursor-pointer'/>
-                <span className='font-extralight text-xl'>rito3668@gmail.com</span>
+                <span className='font-medium text-lg'>rito3668@gmail.com</span>
             </p>
           </div>
       </div>
 
 
       {/* nav small */}
-      <div className='fixed top-10 left-40 text-[17px] text-gray-500 font-extralight'>
-          <Link><span className='hover:font-semibold   duration-200 ease-out'>01 &nbsp;:&nbsp; Home &nbsp;</span>|</Link>
-          <Link><span className='hover:font-semibold  duration-200 ease-out'>&nbsp; 02 &nbsp;: &nbsp;Resume &nbsp;</span></Link>
-      </div>
+      
       {/* footer */}
-      <div className='text-center mt-10'>Inspired by dank memes and big dreams :&#41; </div>
-      <div className='text-center'>	&#169; Ritabrata Pal 2024</div>
+      <div className='text-center mt-10 mb-3 text-gray-600 text-[17px]'>Inspired by dank memes and big dreams :&#41; </div>
+      <div className='text-center text-gray-600 text-[18px]'>	&#169; Ritabrata Pal 2024</div>
+      
     </div>
   )
 }
