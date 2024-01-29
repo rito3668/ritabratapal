@@ -14,12 +14,12 @@ export default function Home() {
     <div className='w-full h-[1000px] text-[18px]'>
       <div className=''>
         <div className='relative'>
-        <img src="https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg" alt="" className='w-full h-[650px]' />
-        <div  className='absolute top-1/3 left-40 flex items-center text-6xl text-white font-bold'>
+        <img src="https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg" alt="" className='w-full h-[300px] md:h-[400px] lg:h-[650px]' />
+        <div  className='absolute top-1/3 left-20 md:left-40 flex items-center text-[30px] sm:text-4xl md:text-6xl  text-white font-bold'>
         <h1>
         Hello, I am &nbsp;
-       <div className='mt-2'>
-       <span >{text}</span>
+       <div className='mt-1 md:mt-5'>
+       <span>{text}</span>
         <Cursor/>
        </div>
       </h1>
@@ -27,11 +27,11 @@ export default function Home() {
         </div> 
       </div>
       {/* main content */}
-      <div className='max-w-[1100px] mx-auto mt-5  grid grid-cols-2 gap-20'>
+      <div className='max-w-[1100px] mx-auto mt-5  grid grid-cols-1 md:grid-cols-2 gap-20'>
           {/* left div */}
-          <div className=''>
-            <h2 className='text-3xl mb-4 font-medium'>Hi there!</h2>
-            <p>My name is Ritabrata Pal. I am currently pursuing B.E/B.Tech from National Institute of Technolodgy, Meghalaya  and have been working on Fullstack Development on Mern Stack. I am passionate about Development, Blockchain, and Web3. I love to work with NextJs and TailwindCSS.</p>
+          <div className='p-4'>
+            <h2 className='text-2xl md:text-3xl mb-4 font-medium'>Hi there!</h2>
+            <p className='text-[15px] md:text-[18px]'>My name is Ritabrata Pal. I am currently pursuing B.E/B.Tech from National Institute of Technolodgy, Meghalaya  and have been working on Fullstack Development on Mern Stack. I am passionate about Development, Blockchain, and Web3. I love to work with NextJs and TailwindCSS.</p>
             <div>
               <p className='mb-2'>Currently, I am:</p>
               <ul className='ml-4'>
@@ -42,7 +42,7 @@ export default function Home() {
             </div>
           </div>
           {/* right  div */}
-          <div className=''>
+          <div className='mx-auto mt-3'>
             <h1 className='text-3xl mb-4'>Links</h1>
             <div className='flex gap-6'>
               <a target='_blank' href='https://github.com'><FaGithub size={21}/></a>
