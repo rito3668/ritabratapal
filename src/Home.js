@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link,useHistory} from 'react-router-dom'
+import {} from 'react-router-dom'
 import { FaGithub,FaTwitter,FaLinkedin,FaInstagram,FaEma } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import {useTypewriter,Cursor} from 'react-simple-typewriter'
@@ -9,7 +9,7 @@ export default function Home() {
     words:['Ritabrata','a FullStack Developer','an Engineering Student','a dog lover'],
     loop:{}
   })
-  const history = useHistory()
+  
   return (
     <div className='w-full h-[1000px] text-[18px]'>
       <div className=''>

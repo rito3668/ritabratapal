@@ -20,6 +20,7 @@ function App() {
           <Link to='/'><span className='hover:font-semibold font-normal'>01 &nbsp;:&nbsp; Home &nbsp;</span>|</Link>
           <Link to='/resume'><span className='hover:font-semibold font-normal'>&nbsp; 02 &nbsp;: &nbsp;Resume &nbsp;</span></Link>
       </div>
+      
       </BrowserRouter>
     </div>
   );
