@@ -5,6 +5,7 @@ import { CiMail } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
 import {useTypewriter,Cursor} from 'react-simple-typewriter'
 // import banner from './assets/banner.jpg'
+import html from './assets/HTML5_logo_and_wordmark.svg.png'
 export default function Home() {
   const [text] = useTypewriter({
     words:['Ritabrata','a FullStack Developer','an Engineering Student','a dog lover'],
@@ -19,7 +20,7 @@ export default function Home() {
         <div  className='absolute top-1/3 left-10 md:left-[150px] flex items-center text-[30px] sm:text-4xl md:text-6xl  text-white font-bold'>
         <h1>
         Hello, I am &nbsp;
-       <div className='mt-1 md:mt-5'>
+       <div className=' md:mt-5'>
        <span>{text}</span>
         <Cursor/>
        </div>
@@ -47,14 +48,15 @@ export default function Home() {
             <h1 className='text-3xl mb-4'>Links</h1>
             <div className='flex gap-6'>
               <FaGithub size={21} onClick={()=>window.open('https://github.com/rito3668','_blank')} className='cursor-pointer'/>
-              <FaLinkedin size={22} onClick={()=>window.open('https://github.com/rito3668','_blank')} className='cursor-pointer text-blue-800'/>
-              <FaTwitter size={21}onClick={()=>window.open('https://github.com/rit.2084','_blank')} className='cursor-pointer text-blue-400'/>
-              <FaInstagram size={21}onClick={()=>window.open('https://instagram.com/rito3668','_blank')} className='cursor-pointer '/>
+              <FaLinkedin size={22} onClick={()=>window.open('https://www.linkedin.com/in/ritabrata-pal-6a728a229/','_blank')} className='cursor-pointer text-blue-800'/>
+              <FaTwitter size={21}onClick={()=>window.open('https://twitter.com/unknown13668','_blank')} className='cursor-pointer text-blue-400'/>
+              <FaInstagram size={21}onClick={()=>window.open('https://instagram.com/rit.2084','_blank')} className='cursor-pointer '/>
             </div>
-            <p className='flex items-center gap-4 mt-5'>
+            <p className='flex items-center gap-3 mt-5'>
               <CiMail size={24} className='cursor-pointer'/>
-                <span className='font-medium text-lg'>rito3668@gmail.com</span>
+                <span className='font-medium text-lg cursor-pointer'>rito3668@gmail.com</span>
             </p>
+            {/* Skills */}
           </div>
       </div>
 
