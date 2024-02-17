@@ -8,7 +8,7 @@ import {useTypewriter,Cursor} from 'react-simple-typewriter'
 import html from './assets/HTML5_logo_and_wordmark.svg.png'
 export default function Home() {
   const [text] = useTypewriter({
-    words:['Ritabrata','a FullStack Developer','an Engineering Student','a dog lover'],
+    words:['Ritabrata','a Frontend Developer','an Engineering Student','a dog lover'],
     loop:{}
   })
   
@@ -36,9 +36,9 @@ export default function Home() {
             <p className='text-[15px] md:text-[18px]'>My name is Ritabrata Pal. I am currently pursuing B.E/B.Tech from National Institute of Technolodgy, Meghalaya  and have been working on Fullstack Development on Mern Stack. I am passionate about Development, Blockchain, and Web3. I love to work with NextJs and TailwindCSS.</p>
             <div>
               <p className='mb-2'>Currently, I am:</p>
-              <ul className='ml-4'>
+              <ul className='ml-4 text-[15px] md:text-[18px]'>
                 <li>Learning NextJs and Typescript</li>
-                <li>Learning about fullstack development</li>
+                <li>Learning about Fullstack development</li>
                 <li>Learning about Data strcutures and algorithms</li>
               </ul>
             </div>
