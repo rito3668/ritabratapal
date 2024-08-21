@@ -2,6 +2,7 @@ import React from 'react'
 import NITM from './assets/NITM.jpg'
 import Chat from './assets/chat.png'
 import Project from './assets/project.png'
+import Gemini from './assets/gemini.png'
 import { FaExternalLinkAlt } from "react-icons/fa";
 export default function Resume() {
   return (
@@ -30,13 +31,13 @@ export default function Resume() {
                     <a target='_blank' href="https://github.com/rito3668/project-management" className='md:flex items-center gap-1 hover:text-blue-700 inline-flex mx-auto '>Github Repo <FaExternalLinkAlt size={15}/></a>
                 </div>
             </div>
-            <div className='mt-20 max-w-[1000px] mx-auto md:flex text-center md:text-left gap-[150px] items-start'>
-                <img src={Chat} alt="logo" className='w-[350px] h-[174px] lg:w-[400px] lg:h-[200px] mx-auto' />
+            <div className='mt-8 max-w-[1000px] mx-auto block text-center md:text-left md:flex gap-[150px] items-start'>
+                <img src={Gemini} alt="logo" className='w-[350px] h-[174px] lg:w-[400px] lg:h-[200px] mx-auto' />
                 <div className='mt-0'>
-                    <h1 className='text-xl font-extrabold my-3'>CHAT APP</h1>
-                    <h2 className='font-normal'><span className='font-semibold'>Desc:</span> Webapp for chatting. It has features like blocking users, deleting messages for self or everyone and user authentication</h2>
-                    <h2 className='font-normal'><span className='font-semibold mr-2'>Techstack</span>NextJs, Firebasev9, TailwindCSS</h2>
-                    <a target='_blank' href="https://github.com/rito3668/next-firebase-chatapp" className='md:flex items-center inline-flex mx-auto gap-1 hover:text-blue-700'>Github Repo <FaExternalLinkAlt size={15}/></a>
+                    <h1 className='text-xl font-extrabold my-3'>GEMINI CLONE</h1>
+                    <h2 className='font-normal'><span className='font-semibold'>Desc:</span> Web Interface for Chat Assistant using Gemini APIs</h2>
+                    <h2 className='font-normal'><span className='font-semibold mr-2'>Techstack</span>React Js, Gemini APIs</h2>
+                    <a target='_blank' href="https://github.com/rito3668/GeminiApp" className='md:flex items-center gap-1 hover:text-blue-700 inline-flex mx-auto '>Github Repo <FaExternalLinkAlt size={15}/></a>
                 </div>
             </div>
         </div>
